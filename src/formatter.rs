@@ -78,9 +78,9 @@ impl TreeStyle {
 /// # Examples
 ///
 /// ```no_run
-/// use usbinfo::{build_usb_tree, TreeFormatter, TreeStyle};
+/// use usbinfo::{usb_tree, TreeFormatter, TreeStyle};
 ///
-/// let tree = build_usb_tree().unwrap();
+/// let tree = usb_tree().unwrap();
 ///
 /// // Default colored output
 /// let formatter = TreeFormatter::new(&tree);

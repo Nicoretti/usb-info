@@ -253,7 +253,7 @@ impl<T> std::ops::Index<&DevicePath> for UsbTree<T> {
 }
 
 /// Build a UsbTree from actual system devices using nusb
-pub fn build_usb_tree() -> Result<UsbTree<UsbDevice>, UsbTreeError> {
+pub fn usb_tree() -> Result<UsbTree<UsbDevice>, UsbTreeError> {
     let devices: Vec<nusb::DeviceInfo> = nusb::list_devices()
         .wait()
         .map_err(|e| UsbTreeError::ListDevices(e.to_string()))?

@@ -6,10 +6,10 @@
 //! # Examples
 //!
 //! ```no_run
-//! use usbinfo::{build_usb_tree, TreeFormatter, TreeStyle};
+//! use usbinfo::{usb_tree, TreeFormatter, TreeStyle};
 //!
 //! // Build the USB device tree
-//! let tree = build_usb_tree().unwrap();
+//! let tree = usb_tree().unwrap();
 //!
 //! // Display with default colored output
 //! let formatter = TreeFormatter::new(&tree);
@@ -38,4 +38,4 @@ pub use device::{matches_vid_pid, UsbDevice};
 pub use error::{DevicePathError, UsbTreeError};
 pub use formatter::{TreeFormatter, TreeStyle};
 pub use path::DevicePath;
-pub use tree::{build_usb_tree, PortTree, UsbTree};
+pub use tree::{usb_tree, PortTree, UsbTree};
