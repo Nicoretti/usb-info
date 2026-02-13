@@ -1,0 +1,13 @@
+[package]
+name = "usbinfo"
+version = "0.1.0"
+edition = "2024"
+description = "A command-line tool for exploring the USB device tree"
+license = "MIT"
+repository = "https://github.com/Nicoretti/usb-info"
+readme = "README.md"
+keywords = ["usb", "lsusb", "cli", "hardware"]
+categories = ["command-line-utilities", "hardware-support"]
+authors = ["Nicola Coretti"]
+
+[dependencies]
